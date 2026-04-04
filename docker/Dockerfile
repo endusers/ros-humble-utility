@@ -93,6 +93,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-plotjuggler-ros \
     ros-humble-topic-tools \
     ros-humble-rviz-2d-overlay-plugins \
+    ros-humble-urdf-tutorial \
     && rm -rf /var/lib/apt/lists/*
 
 # gazebo-ros-pkgs
@@ -140,6 +141,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libomp-dev \
     libbenchmark-dev \
     libceres-dev \
+    libxcb-cursor0 \
     && rm -rf /var/lib/apt/lists/*
 
 # rtabmap
@@ -191,6 +193,7 @@ RUN pip install mcap-ros2-support
 RUN pip install fiona
 RUN pip install pandas
 RUN pip install geopandas
+RUN pip install pyside6
 
 RUN pip install setuptools==58.2.0
 
